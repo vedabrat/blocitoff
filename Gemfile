@@ -21,6 +21,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap'
 gem 'figaro'
+gem 'devise'
+gem 'pry'
+gem 'pundit'
+gem 'stripe'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'byebug'
