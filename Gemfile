@@ -9,6 +9,7 @@ group :production do
 end
 
 group :development do
+  gem "letter_opener" # to preview confirmation emails
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
 end
@@ -20,12 +21,12 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap'
-gem 'figaro'
-gem 'devise'
-gem 'pry'
-gem 'pundit'
-gem 'stripe'
-gem 'redcarpet'
+gem 'figaro' #for encryption
+gem 'devise' #for user profile
+gem 'pry' #for debugginh
+gem 'pundit' #for authentication
+gem 'stripe' #for payments
+gem 'redcarpet' # for Markdown processing
 
 group :development, :test do
   gem 'byebug'
@@ -33,6 +34,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'faker'
-  gem 'factory_bot'
+  gem 'factory_bot' #for data/class/object generation
   gem 'pry-rails'
 end
