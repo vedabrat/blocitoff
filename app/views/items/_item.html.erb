@@ -1,3 +1,10 @@
+
 <% if @item.user == current_user %>
-  <%= @item.name %>
+  <% (0..@items.count-1).each do |thisting| %>
+  <div class=form-group>
+
+    <%= @items[thisting].name  %>
+  </div>
+
+  <% end %>
 <% end %>
