@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'items/_form'
 
-  get 'items/_item'
+  get 'items/_items'
 
   devise_for :users
   get 'welcome/profile'
