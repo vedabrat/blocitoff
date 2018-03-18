@@ -7,7 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 10.times do
     Item.new(name: Faker::Lorem.sentence)
-    User.new(id: (User.count + 1), email: (Faker::Lorem.word+"@gmail.com"))
+    User.new(
+      email: (Faker::Lorem.word+"@gmail.com"),
+      password: Faker::Lorem.word,
+      password_confirmation: Faker::Lorem.word
+    )
 end
 
 puts "Seed finished"
