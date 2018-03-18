@@ -3,8 +3,7 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     @item.user = current_user
-    @new_item = Item.new
-
+ 
     if @item.save
       flash[:notice] = "List has been updated"
     else
