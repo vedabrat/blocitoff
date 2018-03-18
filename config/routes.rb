@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'items/_form'
-
-  get 'items/_item'
 
   devise_for :users
   get 'welcome/profile'

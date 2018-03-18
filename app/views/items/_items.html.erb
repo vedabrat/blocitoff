@@ -1,9 +1,9 @@
 
 <% if @item.user == current_user %>
-  <% (0..@items.count-1).each do |thisting| %>
+  <% @items.each do |i| %>
   <div class=form-group>
 
-    <%= @items[thisting].name  %>
+    <%= i.name  %>
   </div>
 
   <% end %>
