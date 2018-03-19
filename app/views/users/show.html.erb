@@ -1,18 +1,16 @@
-<h1>Users#show</h1>
-<h6>I'm in app/views/users/show.html.erb</h6>
-
-<p> This is the user profile with the object and some details. </p>
+<h1> User profile's object and details. </h1>
 <br>
-Current User: <%= @user %>
+Current User: <%= @item.user %>
 <br>
-Email: <%= @user.email %>
+Email: <%= @item.user.email %>
 <br>
-Name: <%= @user.name %>
+Name: <%= @item.user.name %>
 <br>
-Confirmed on :<%= @user.confirmed_at %>
+Confirmed on :<%= @item.user.confirmed_at %>
 <br>
 <br>
 
+<h2> Items </h2>
 
 <% if current_user %>
      <div class="col-md-8">
@@ -24,3 +22,5 @@ Confirmed on :<%= @user.confirmed_at %>
          </div>
      </div>
  <% end %>
+
+ <h6>I'm in app/views/users/show.html.erb</h6>

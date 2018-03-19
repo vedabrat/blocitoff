@@ -1,10 +1,6 @@
 
-<% if @item.user == current_user %>
-  <% @items.each do |i| %>
-  <div class=form-group>
-
-    <%= i.name  %>
-  </div>
-
+  <% current_user.items.each do |i| %>
+    <div class=form-group>
+      <%= i.name  %>
+    </div>
   <% end %>
-<% end %>
