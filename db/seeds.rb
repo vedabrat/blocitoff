@@ -9,8 +9,8 @@
     Item.new(name: Faker::Lorem.sentence)
     User.new(
       email: (Faker::Lorem.word+"@gmail.com"),
-      password: Faker::Lorem.word,
-      password_confirmation: Faker::Lorem.word
+      password: "test123!",
+      password_confirmation: "test123!"
     )
 end
 
