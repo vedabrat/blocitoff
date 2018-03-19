@@ -1,5 +1,5 @@
 
-  <% @items.each do |i| %>
+  <% current_user.items.each do |i| %>
     <div class=form-group>
       <%= i.name  %>
     </div>
