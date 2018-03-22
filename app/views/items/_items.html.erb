@@ -3,8 +3,8 @@
   <% @items.each do |i| %>
   <div class=form-group>
 
-    <%= i.name  %>
-    <%= link_to "Delete", @item, method: :delete, class: 'glyphicon glyphicon-ok' %>
+    <p id="<%= i.id %>"><%= i.name  %>
+    <%= link_to "Delete", i, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></p>
 
   </div>
 
