@@ -1,18 +1,7 @@
-
-<<<<<<< HEAD
-<% if @item.user == current_user %>
-  <% @items.each do |i| %>
-  <div class=form-group>
-
-    <p id="<%= i.id %>"><%= i.name  %>
-    <%= link_to "Delete", i, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></p>
-
-  </div>
-
-=======
   <% current_user.items.each do |i| %>
     <div class=form-group>
-      <%= i.name  %>
+      <p id="<%= i.id %>"><%= i.name  %>
+      <%= link_to "Delete", i, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></p>
+
     </div>
->>>>>>> master
   <% end %>
