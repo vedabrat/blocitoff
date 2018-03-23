@@ -1,4 +1,6 @@
 about
+app:template
+app:update
 assets:clean[keep]
 assets:clobber
 assets:environment
@@ -8,6 +10,7 @@ cache_digests:dependencies
 cache_digests:nested_dependencies
 db:create
 db:drop
+db:environment:set
 db:fixtures:load
 db:migrate
 db:migrate:status
@@ -21,13 +24,13 @@ db:setup
 db:structure:dump
 db:structure:load
 db:version
-doc:app
+dev:cache
+initializers
 log:clear
 middleware
 notes
 notes:custom
-rails:template
-rails:update
+restart
 routes
 secret
 spec
@@ -36,6 +39,8 @@ spec:helpers
 spec:models
 spec:views
 stats
-time:zones:all
+time:zones[country_or_offset]
 tmp:clear
 tmp:create
+todo:delete_items
+yarn:install
