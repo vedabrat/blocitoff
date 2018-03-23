@@ -1,7 +1,10 @@
   <% current_user.items.each do |i| %>
     <div class=form-group>
       <p id="<%= i.id %>"><%= i.name  %>
-      <%= link_to "Delete", i, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></p>
+      <%= link_to "Delete", i, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+      <% time = Time.now %>
+      <%= "#{distance_of_time_in_words(time, i.created_at + 7.days)} before deletion" %></p>
 
+      </p>
     </div>
   <% end %>
